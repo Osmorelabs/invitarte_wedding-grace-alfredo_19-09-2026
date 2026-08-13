@@ -1,42 +1,41 @@
 <script setup lang="ts">
-import Divider from './Divider.vue'
-
-export interface DressItem {
-	label: string
-	class: string
-}
-
-const props = withDefaults(
+withDefaults(
 	defineProps<{
 		note?: string
-		items?: DressItem[]
 	}>(),
 	{
-		note: 'Formal · trajes y vestidos largos',
+		note: 'Formal Elegante',
 	},
 )
-
-const items = props.items ?? []
 </script>
 
 <template>
-	<section id="dresscode" class="px-6 py-16 sm:py-20">
-		<div class="mx-auto max-w-md text-center">
-			<p class="font-script text-3xl text-olive-600">Sugerencia</p>
-			<h2 class="mt-1 font-serif text-4xl text-olive-800">Código de vestimenta</h2>
-			<Divider />
-
-			<div class="flex flex-col gap-6 rounded-2xl border border-olive-300/50 bg-beige-100 px-6 py-8">
-				<div class="flex items-center justify-center gap-3">
-					<span
-						v-for="item in items"
-						:key="item.label"
-						class="h-10 w-10 rounded-full border border-olive-300/40"
-						:class="item.class"
-						:title="item.label"
-					></span>
+	<section id="dress-code" class="relative bg-paper px-6 sm:px-10 py-6 text-olive-900 reveal-on-scroll">
+		<div class="mx-auto max-w-sm">
+			<div class="grid grid-cols-[48px_1fr] gap-4 sm:gap-6 items-start text-left">
+				<!-- Suit Hanger Icon (Line Art) -->
+				<div class="flex items-center justify-center text-olive-800 pt-1">
+					<svg class="h-10 w-10 stroke-[1.2]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+						<path d="M12 7a2 2 0 10-2-2 2 2 0 002 2zm0 0v2.5L3.5 16A1.5 1.5 0 005 18h14a1.5 1.5 0 001.5-2L12 9.5" />
+					</svg>
 				</div>
-				<p class="text-sm font-light tracking-wide text-olive-700">{{ note }}</p>
+
+				<!-- Content -->
+				<div class="flex flex-col items-start">
+					<h3 class="font-serif text-sm sm:text-base tracking-[0.2em] uppercase text-olive-800 font-semibold leading-tight">
+						CÓDIGO DE VESTIMENTA
+					</h3>
+					<p class="mt-2 font-serif text-xs leading-relaxed text-olive-700 font-normal">
+						{{ note }}
+					</p>
+				</div>
+			</div>
+
+			<!-- Divider Line with Centered Heart -->
+			<div class="mt-8 flex items-center justify-center gap-4 text-olive-300">
+				<span class="h-px flex-1 bg-olive-300/40"></span>
+				<span class="text-olive-500 text-xs">♥</span>
+				<span class="h-px flex-1 bg-olive-300/40"></span>
 			</div>
 		</div>
 	</section>

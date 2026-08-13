@@ -19,15 +19,17 @@ withDefaults(
 </script>
 
 <template>
-	<section class="relative bg-paper pt-12 pb-8 text-center text-olive-900">
+	<section class="relative bg-paper pt-20 sm:pt-24 pb-8 text-center text-olive-900">
 		<!-- Top Left Botanical Leaves Overlay (Ornamenta 1) -->
 		<FoliageDecor position="top-left" />
+		<!-- Top Right Botanical Leaves Overlay (Ornamenta 1) -->
+		<FoliageDecor position="top-right" />
 		<!-- Side Margin Botanical Leaves Overlay (Ornamenta 2 - Left Side) -->
 		<FoliageDecor position="parents-left" />
 
 		<div class="relative z-10 px-6 sm:px-10 reveal-on-scroll">
 			<!-- Bible Quote -->
-			<div class="mx-auto max-w-xs sm:max-w-sm">
+			<div class="mx-auto max-w-xs sm:max-w-sm mt-6 sm:mt-10">
 				<p class="font-serif text-xs sm:text-sm tracking-[0.18em] uppercase text-olive-700 leading-relaxed font-medium">
 					“TRES COSAS PERMANECERÁN PARA SIEMPRE — LA FE, LA ESPERANZA Y EL AMOR. Y LA MAYOR DE ELLAS ES EL AMOR.”
 				</p>

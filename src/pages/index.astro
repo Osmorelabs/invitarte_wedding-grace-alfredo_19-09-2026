@@ -6,6 +6,7 @@ import Ceremony from '../components/Ceremony.vue';
 import Itinerary from '../components/Itinerary.vue';
 import ReservedSeats from '../components/ReservedSeats.vue';
 import GiftSuggestion from '../components/GiftSuggestion.vue';
+import DressCode from '../components/DressCode.vue';
 import Rsvp from '../components/Rsvp.vue';
 import AdultsOnly from '../components/AdultsOnly.vue';
 ---
@@ -36,6 +37,9 @@ import AdultsOnly from '../components/AdultsOnly.vue';
 
 			<!-- Gift Suggestions -->
 			<GiftSuggestion client:load />
+
+			<!-- Dress Code -->
+			<DressCode note="Formal Elegante" />
 
 			<!-- Confirmation RSVP -->
 			<Rsvp client:load />

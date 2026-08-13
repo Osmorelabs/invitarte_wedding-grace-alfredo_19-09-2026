@@ -17,15 +17,15 @@ withDefaults(
 	<!-- Top Botanical Branch (Ornamenta 1) -->
 	<div
 		v-if="position === 'top-left' || position === 'top-right'"
-		class="pointer-events-none absolute -top-2 z-30 w-36 sm:w-44 mix-blend-multiply opacity-90 parallax-decor"
-		:class="position === 'top-right' ? '-right-20 sm:-right-24' : '-left-20 sm:-left-24'"
+		class="pointer-events-none absolute -top-3 z-30 w-36 sm:w-44 mix-blend-multiply opacity-90 parallax-decor"
+		:class="position === 'top-right' ? '-right-10 sm:-right-14' : '-left-10 sm:-left-14'"
 		data-speed="0.06"
 	>
 		<img
 			:src="ornamenta1.src"
 			alt="Eucalipto acuarela inicio"
-			class="w-full h-auto object-contain origin-top"
-			:class="position === 'top-right' ? 'rotate-[35deg] origin-top-right translate-x-8 -translate-y-1 -scale-x-100' : '-rotate-[35deg] origin-top-left -translate-x-8 -translate-y-1'"
+			class="w-full h-auto object-contain"
+			:class="position === 'top-right' ? 'rotate-[45deg] origin-top-right translate-x-2 -translate-y-1 -scale-x-100' : '-rotate-[45deg] origin-top-left -translate-x-2 -translate-y-1'"
 			style="filter: sepia(0.2) hue-rotate(8deg) saturate(0.9) opacity(0.88);"
 		/>
 	</div>
