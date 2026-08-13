@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import FoliageDecor from './FoliageDecor.vue'
 
 const waNumber = '51914094578'
 const name = ref('')
@@ -17,7 +18,9 @@ const waLink = computed(
 </script>
 
 <template>
-	<section id="rsvp" class="bg-paper px-6 py-8 text-center text-olive-900 reveal-on-scroll">
+	<section id="rsvp" class="relative bg-paper px-6 py-8 text-center text-olive-900 reveal-on-scroll overflow-hidden">
+		<!-- Bottom Right Botanical Ornament (Ornamenta 3) -->
+		<FoliageDecor position="bottom-right" />
 		<div class="mx-auto max-w-sm flex flex-col items-center">
 			<!-- Phone Icon -->
 			<div class="mb-3 text-olive-700">
