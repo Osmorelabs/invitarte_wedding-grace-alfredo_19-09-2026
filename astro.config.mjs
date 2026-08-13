@@ -7,6 +7,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
 	site: 'https://osmorelabs.github.io',
 	base: '/invitarte_wedding-grace-alfredo_19-09-2026/',
+	output: 'static',
 	integrations: [vue()],
 	vite: {
 		plugins: [tailwindcss()],
