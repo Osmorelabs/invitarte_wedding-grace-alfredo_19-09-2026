@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import FoliageDecor from './FoliageDecor.vue'
+
 const items = [
 	{
 		time: '09:30 AM',
@@ -34,7 +36,9 @@ const items = [
 </script>
 
 <template>
-	<section id="itinerary" class="bg-paper px-6 py-10 text-center reveal-on-scroll">
+	<section id="itinerary" class="relative bg-paper px-6 py-10 text-center reveal-on-scroll">
+		<!-- Right Side Foliage Branch (Ornamenta 2) -->
+		<FoliageDecor position="mid-right" />
 		<div class="mx-auto max-w-md">
 			<h2 class="font-serif text-base sm:text-lg tracking-[0.3em] uppercase text-olive-800 font-medium">
 				ITINERARIO DE ACTIVIDADES

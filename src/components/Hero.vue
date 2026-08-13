@@ -19,11 +19,11 @@ withDefaults(
 </script>
 
 <template>
-	<section class="relative bg-paper pt-12 pb-8 text-center text-olive-900 overflow-hidden">
+	<section class="relative bg-paper pt-12 pb-8 text-center text-olive-900">
 		<!-- Top Left Botanical Leaves Overlay (Ornamenta 1) -->
 		<FoliageDecor position="top-left" />
-		<!-- Side Margin Botanical Leaves Overlay (Ornamenta 2) -->
-		<FoliageDecor position="parents-right" />
+		<!-- Side Margin Botanical Leaves Overlay (Ornamenta 2 - Left Side) -->
+		<FoliageDecor position="parents-left" />
 
 		<div class="relative z-10 px-6 sm:px-10 reveal-on-scroll">
 			<!-- Bible Quote -->

@@ -5,7 +5,7 @@ import ornamenta3 from '../assets/texture/ornamenta_3.png'
 
 withDefaults(
 	defineProps<{
-		position?: 'top-left' | 'mid-right' | 'bottom-right' | 'parents-right' | 'divider'
+		position?: 'top-left' | 'top-right' | 'mid-right' | 'bottom-right' | 'parents-right' | 'parents-left' | 'mid-left' | 'bottom-left' | 'divider'
 	}>(),
 	{
 		position: 'top-left',
@@ -14,43 +14,54 @@ withDefaults(
 </script>
 
 <template>
-	<!-- Top Left Botanical Branch (Ornamenta 1) -->
+	<!-- Top Botanical Branch (Ornamenta 1) -->
 	<div
-		v-if="position === 'top-left'"
-		class="pointer-events-none absolute -top-2 -left-20 sm:-left-24 z-20 w-36 sm:w-44 mix-blend-multiply opacity-90 parallax-decor"
+		v-if="position === 'top-left' || position === 'top-right'"
+		class="pointer-events-none absolute -top-2 z-30 w-36 sm:w-44 mix-blend-multiply opacity-90 parallax-decor"
+		:class="position === 'top-right' ? '-right-20 sm:-right-24' : '-left-20 sm:-left-24'"
 		data-speed="0.06"
 	>
 		<img
 			:src="ornamenta1.src"
-			alt="Eucalipto acuarela"
-			class="w-full h-auto object-contain -rotate-[35deg] origin-top-left -translate-x-8 -translate-y-1"
+			alt="Eucalipto acuarela inicio"
+			class="w-full h-auto object-contain origin-top"
+			:class="position === 'top-right' ? 'rotate-[35deg] origin-top-right translate-x-8 -translate-y-1 -scale-x-100' : '-rotate-[35deg] origin-top-left -translate-x-8 -translate-y-1'"
+			style="filter: sepia(0.2) hue-rotate(8deg) saturate(0.9) opacity(0.88);"
 		/>
 	</div>
 
-	<!-- Mid Right Botanical Branch (Ornamenta 2) -->
+	<!-- Side Botanical Branch (Ornamenta 2) -->
 	<div
-		v-else-if="position === 'mid-right' || position === 'parents-right'"
-		class="pointer-events-none absolute -right-2 z-20 w-36 sm:w-44 mix-blend-multiply opacity-90 parallax-decor"
-		:class="position === 'parents-right' ? 'top-1/4' : 'top-1/2 -translate-y-1/2'"
+		v-else-if="position === 'mid-right' || position === 'parents-right' || position === 'mid-left' || position === 'parents-left'"
+		class="pointer-events-none absolute z-30 w-48 sm:w-60 mix-blend-multiply opacity-90 parallax-decor"
+		:class="[
+			position.endsWith('-right') ? '-right-16 sm:-right-24' : '-left-16 sm:-left-24',
+			position.startsWith('parents') ? 'top-[58%]' : 'top-1/2 -translate-y-1/2'
+		]"
 		data-speed="-0.04"
 	>
 		<img
 			:src="ornamenta2.src"
-			alt="Rama eucalipto acuarela"
-			class="w-full h-auto object-contain"
+			alt="Eucalipto costado 2"
+			class="w-full h-auto object-contain origin-center"
+			:class="position.endsWith('-right') ? 'rotate-[2deg]' : '-scale-x-100 rotate-[2deg]'"
+			style="filter: sepia(0.3) hue-rotate(12deg) saturate(0.82) opacity(0.85);"
 		/>
 	</div>
 
-	<!-- Bottom Right Botanical Branch (Ornamenta 3) -->
+	<!-- Bottom Botanical Branch (Ornamenta 3) -->
 	<div
-		v-else-if="position === 'bottom-right'"
-		class="pointer-events-none absolute -right-1 bottom-16 z-20 w-36 sm:w-44 mix-blend-multiply opacity-90 parallax-decor"
+		v-else-if="position === 'bottom-right' || position === 'bottom-left'"
+		class="pointer-events-none absolute top-1/2 -translate-y-1/2 z-30 w-48 sm:w-60 mix-blend-multiply opacity-90 parallax-decor"
+		:class="position === 'bottom-right' ? '-right-12 sm:-right-16' : '-left-12 sm:-left-16'"
 		data-speed="0.05"
 	>
 		<img
 			:src="ornamenta3.src"
-			alt="Eucalipto acuarela"
+			alt="Eucalipto costado 3"
 			class="w-full h-auto object-contain"
+			:class="position === 'bottom-left' ? '-scale-x-100' : ''"
+			style="filter: sepia(0.3) hue-rotate(12deg) saturate(0.82) opacity(0.85);"
 		/>
 	</div>
 
