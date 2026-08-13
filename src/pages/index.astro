@@ -1,11 +1,47 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Hero from '../components/Hero.vue';
+import Countdown from '../components/Countdown.vue';
+import Ceremony from '../components/Ceremony.vue';
+import Itinerary from '../components/Itinerary.vue';
+import ReservedSeats from '../components/ReservedSeats.vue';
+import GiftSuggestion from '../components/GiftSuggestion.vue';
+import Rsvp from '../components/Rsvp.vue';
+import AdultsOnly from '../components/AdultsOnly.vue';
 ---
 
 <Layout>
-	<Welcome />
+	<!-- Single continuous vertical container -->
+	<main class="min-h-screen py-4 sm:py-8 px-2 sm:px-4">
+		<div class="relative mx-auto max-w-md sm:max-w-lg overflow-hidden rounded-3xl bg-paper shadow-2xl ring-1 ring-olive-900/10">
+			<!-- Header, Monogram, Bible Quote, Torn Photo 1, Parents, Calligraphy & Date -->
+			<Hero
+				bride="Grecia"
+				groom="Alfredo"
+				date="19 · 09 · 2026"
+				location="Arequipa, Perú"
+			/>
+
+			<!-- Countdown Timer -->
+			<Countdown client:load targetDate="2026-09-19T09:30:00-05:00" />
+
+			<!-- Religious Ceremony & Reception with Location Buttons -->
+			<Ceremony />
+
+			<!-- Itinerary of Activities Timeline -->
+			<Itinerary />
+
+			<!-- Reserved Seats -->
+			<ReservedSeats :seats="2" />
+
+			<!-- Gift Suggestions -->
+			<GiftSuggestion client:load />
+
+			<!-- Confirmation RSVP -->
+			<Rsvp client:load />
+
+			<!-- Adults Only Notice & Bottom Torn Photo -->
+			<AdultsOnly />
+		</div>
+	</main>
 </Layout>

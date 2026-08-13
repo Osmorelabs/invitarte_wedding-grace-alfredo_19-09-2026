@@ -1,0 +1,95 @@
+@import 'tailwindcss';
+
+@theme {
+	--font-serif: 'Cormorant Garamond', Georgia, serif;
+	--font-sans: 'Jost', 'Helvetica Neue', Arial, sans-serif;
+	--font-script: 'Great Vibes', 'Cormorant Garamond', cursive;
+
+	/* Paper / Cream */
+	--color-beige-50: #fcfbfa;
+	--color-beige-100: #f5f2eb;
+	--color-beige-200: #e9e4d7;
+	--color-beige-300: #d8ceb7;
+	--color-beige-400: #c4b494;
+
+	/* Sage / Olive Watercolor */
+	--color-sage-50: #f3f6f3;
+	--color-sage-100: #e5ebe4;
+	--color-sage-200: #ccd8cb;
+	--color-sage-300: #a9beaa;
+	--color-sage-400: #8ba58d;
+	--color-sage-500: #6c896e;
+
+	/* Dark Olive */
+	--color-olive-100: #e7ebd9;
+	--color-olive-200: #d0d8b6;
+	--color-olive-300: #b2bf8d;
+	--color-olive-400: #788556;
+	--color-olive-500: #57633b;
+	--color-olive-600: #444f2d;
+	--color-olive-700: #353f22;
+	--color-olive-800: #283019;
+	--color-olive-900: #1b2110;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	@apply bg-beige-200 font-sans text-olive-900 antialiased;
+	background-color: #e8e2d5;
+}
+
+.bg-paper {
+	background-color: #f6f3eb;
+}
+
+.bg-watercolor-sage {
+	background-color: #dce4da;
+}
+
+.bg-green-texture {
+	background-color: #353f22;
+}
+
+/* Torn paper edge shadow effects */
+.torn-edge-top {
+	filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.15));
+}
+
+.torn-edge-bottom {
+	filter: drop-shadow(0px -3px 3px rgba(0, 0, 0, 0.15));
+}
+
+/* Scroll Reveal & Parallax Animations */
+.reveal-on-scroll {
+	opacity: 0;
+	transform: translateY(36px);
+	transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+	will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.reveal-delay-1 {
+	transition-delay: 0.12s;
+}
+
+.reveal-delay-2 {
+	transition-delay: 0.24s;
+}
+
+.reveal-delay-3 {
+	transition-delay: 0.36s;
+}
+
+.parallax-decor {
+	will-change: transform;
+	transition: transform 0.1s ease-out;
+}
+
+
