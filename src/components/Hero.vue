@@ -126,14 +126,14 @@ withDefaults(
 			</p>
 
 			<!-- Date Box -->
-			<div class="mt-6 inline-flex items-center justify-center gap-4 sm:gap-6 border-t border-b border-olive-400/50 py-3 px-6">
-				<span class="font-serif text-sm tracking-[0.25em] uppercase text-olive-700 font-medium">
+			<div class="mt-5 inline-flex items-center justify-center gap-3 sm:gap-4 border-t border-b border-olive-400/50 py-2 px-4 sm:px-5">
+				<span class="font-serif text-xs sm:text-sm tracking-[0.20em] uppercase text-olive-700 font-medium">
 					Sábado
 				</span>
-				<span class="font-serif text-5xl font-bold text-olive-900 leading-none">
+				<span class="font-serif text-3xl sm:text-4xl font-semibold text-olive-900 leading-none">
 					19
 				</span>
-				<span class="font-serif text-sm tracking-[0.25em] uppercase text-olive-700 font-medium">
+				<span class="font-serif text-xs sm:text-sm tracking-[0.20em] uppercase text-olive-700 font-medium">
 					Septiembre 2026
 				</span>
 			</div>
