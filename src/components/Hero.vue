@@ -78,7 +78,7 @@ withDefaults(
 							PADRES DE LA NOVIA
 						</p>
 						<p class="mt-1.5 font-serif text-base text-olive-800 font-medium">
-							Sr. Víctor Méndez Chávez
+							Sr. Víctor Méndez Chávez ✝
 						</p>
 						<p class="font-serif text-sm text-olive-700">
 							&amp; Sra. Lucrecia Turpo Arapa
@@ -89,7 +89,7 @@ withDefaults(
 							PADRES DEL NOVIO
 						</p>
 						<p class="mt-1.5 font-serif text-base text-olive-800 font-medium">
-							Sr. Víctor Calagua Zapata
+							Sr. Alfredo Calagua Zapata
 						</p>
 						<p class="font-serif text-sm text-olive-700">
 							&amp; Sra. Angela Gual Bramón
