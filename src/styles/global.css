@@ -52,6 +52,9 @@ body {
 
 .bg-green-texture {
 	background-color: #353f22;
+	background-image: var(--bg-green-texture);
+	background-size: cover;
+	background-position: center;
 }
 
 /* Torn paper edge shadow effects */

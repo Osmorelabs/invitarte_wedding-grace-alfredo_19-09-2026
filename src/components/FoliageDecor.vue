@@ -33,10 +33,11 @@ withDefaults(
 	<!-- Side Botanical Branch (Ornamenta 2) -->
 	<div
 		v-else-if="position === 'mid-right' || position === 'parents-right' || position === 'mid-left' || position === 'parents-left'"
-		class="pointer-events-none absolute z-30 w-48 sm:w-60 mix-blend-multiply opacity-90 parallax-decor"
+		class="pointer-events-none absolute z-30 mix-blend-multiply opacity-90 parallax-decor"
 		:class="[
-			position.endsWith('-right') ? '-right-16 sm:-right-24' : '-left-16 sm:-left-24',
-			position.startsWith('parents') ? 'top-[58%]' : 'top-1/2 -translate-y-1/2'
+			position === 'mid-right' ? '-right-32 sm:-right-44 top-[-12rem] sm:top-[-15rem] w-64 sm:w-84' :
+			position === 'parents-left' ? '-left-32 sm:-left-44 top-[64%] w-64 sm:w-84' :
+			(position.endsWith('-right') ? '-right-16 sm:-right-24' : '-left-16 sm:-left-24') + ' w-48 sm:w-60 ' + (position.startsWith('parents') ? 'top-[58%]' : 'top-1/2 -translate-y-1/2')
 		]"
 		data-speed="-0.04"
 	>
@@ -44,7 +45,11 @@ withDefaults(
 			:src="ornamenta2.src"
 			alt="Eucalipto costado 2"
 			class="w-full h-auto object-contain origin-center"
-			:class="position.endsWith('-right') ? 'rotate-[2deg]' : '-scale-x-100 rotate-[2deg]'"
+			:class="[
+				position === 'mid-right' ? '-rotate-[10deg]' :
+				position === 'parents-left' ? '-scale-x-100 rotate-[10deg]' :
+				(position.endsWith('-right') ? 'rotate-[2deg]' : '-scale-x-100 rotate-[2deg]')
+			]"
 			style="filter: sepia(0.3) hue-rotate(12deg) saturate(0.82) opacity(0.85);"
 		/>
 	</div>

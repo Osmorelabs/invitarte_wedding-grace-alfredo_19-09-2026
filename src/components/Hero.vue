@@ -64,45 +64,59 @@ withDefaults(
 		<div class="relative z-10 px-6 sm:px-10 reveal-on-scroll reveal-delay-2">
 			<!-- Announcement Quote -->
 			<div class="mx-auto max-w-sm">
-				<p class="font-serif text-sm sm:text-base tracking-[0.15em] uppercase leading-relaxed text-olive-800 font-normal">
+				<p class="font-serif text-xs sm:text-sm tracking-[0.12em] uppercase leading-relaxed text-olive-800 font-normal">
 					CON GRAN ALEGRÍA Y CORAZONES AGRADECIDOS, JUNTO CON NUESTROS PADRES, LOS INVITAMOS A COMPARTIR LA CELEBRACIÓN DE NUESTRO AMOR MIENTRAS NOS UNIMOS EN MATRIMONIO.
 				</p>
 				<div class="mt-4 text-olive-500 text-sm">♥</div>
 			</div>
 
-			<!-- Parents Section -->
-			<div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-md mx-auto border-t border-b border-olive-300/40 py-6">
-				<div class="flex flex-col items-center justify-center">
-					<p class="font-serif text-xs tracking-[0.25em] uppercase text-olive-500 font-semibold">
-						PADRES DE LA NOVIA
-					</p>
-					<p class="mt-1.5 font-serif text-base text-olive-800 font-medium">
-						SR. VÍCTOR MÉNDEZ CHÁVEZ
-					</p>
-					<p class="font-serif text-sm text-olive-700">
-						&amp; SRA. LUCRECIA TURPO ARAPA
-					</p>
+			<!-- Parents & Godparents Section -->
+			<div class="mt-8 max-w-md mx-auto border-t border-b border-olive-300/40 py-6 flex flex-col gap-6">
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+					<div class="flex flex-col items-center justify-center">
+						<p class="font-serif text-xs tracking-[0.25em] uppercase text-olive-500 font-semibold">
+							PADRES DE LA NOVIA
+						</p>
+						<p class="mt-1.5 font-serif text-base text-olive-800 font-medium">
+							Sr. Víctor Méndez Chávez
+						</p>
+						<p class="font-serif text-sm text-olive-700">
+							&amp; Sra. Lucrecia Turpo Arapa
+						</p>
+					</div>
+					<div class="flex flex-col items-center justify-center">
+						<p class="font-serif text-xs tracking-[0.25em] uppercase text-olive-500 font-semibold">
+							PADRES DEL NOVIO
+						</p>
+						<p class="mt-1.5 font-serif text-base text-olive-800 font-medium">
+							Sr. Víctor Calagua Zapata
+						</p>
+						<p class="font-serif text-sm text-olive-700">
+							&amp; Sra. Angela Gual Bramón
+						</p>
+					</div>
 				</div>
-				<div class="flex flex-col items-center justify-center">
+
+				<div class="pt-6 border-t border-olive-300/30 flex flex-col items-center justify-center">
 					<p class="font-serif text-xs tracking-[0.25em] uppercase text-olive-500 font-semibold">
-						PADRES DEL NOVIO
+						PADRINOS
 					</p>
 					<p class="mt-1.5 font-serif text-base text-olive-800 font-medium">
-						SR. ALFREDO CALAGUA ZAPATA
+						Sr. Plinio Juan Paredes Maydana
 					</p>
 					<p class="font-serif text-sm text-olive-700">
-						&amp; SRA. ANGELA GUAL BRAMON
+						&amp; Sra. Lus Rodriguez del Carpio
 					</p>
 				</div>
 			</div>
 
 			<!-- Calligraphy Names -->
 			<div class="mt-10 flex flex-col items-center justify-center">
-				<h1 class="font-script text-8xl sm:text-9xl text-olive-800 leading-none drop-shadow-sm">
+				<h1 class="font-script text-8xl sm:text-8xl text-olive-800 leading-none drop-shadow-sm">
 					{{ bride }}
 				</h1>
 				<span class="font-script text-5xl text-olive-600 my-1">&amp;</span>
-				<h1 class="font-script text-8xl sm:text-9xl text-olive-800 leading-none drop-shadow-sm">
+				<h1 class="font-script text-8xl sm:text-8xl text-olive-800 leading-none drop-shadow-sm">
 					{{ groom }}
 				</h1>
 			</div>
@@ -114,13 +128,13 @@ withDefaults(
 			<!-- Date Box -->
 			<div class="mt-6 inline-flex items-center justify-center gap-4 sm:gap-6 border-t border-b border-olive-400/50 py-3 px-6">
 				<span class="font-serif text-sm tracking-[0.25em] uppercase text-olive-700 font-medium">
-					SÁBADO
+					Sábado
 				</span>
 				<span class="font-serif text-5xl font-bold text-olive-900 leading-none">
 					19
 				</span>
 				<span class="font-serif text-sm tracking-[0.25em] uppercase text-olive-700 font-medium">
-					SEPTIEMBRE 2026
+					Septiembre 2026
 				</span>
 			</div>
 

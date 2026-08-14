@@ -2,7 +2,7 @@
 import { computed, ref } from 'vue'
 import FoliageDecor from './FoliageDecor.vue'
 
-const waNumber = '51914094578'
+const waNumber = '51936793354'
 const name = ref('')
 
 const message = computed(() => {
@@ -51,22 +51,14 @@ const waLink = computed(
 							class="w-full rounded-md border border-olive-300 bg-white/90 px-3 py-2 text-xs text-olive-900 placeholder:text-olive-400 focus:border-olive-600 focus:outline-none shadow-xs"
 						/>
 
-						<div class="relative w-full">
-							<a
-								:href="waLink"
-								target="_blank"
-								rel="noopener noreferrer"
-								class="flex w-full items-center justify-center gap-2 rounded-md bg-olive-800 px-3 py-2.5 text-xs font-semibold tracking-[0.25em] uppercase text-beige-50 shadow-sm transition-all hover:bg-olive-900 cursor-pointer"
-							>
-								ENVIAR MENSAJE
-							</a>
-							<!-- Click Pointer Hand Icon -->
-							<div class="pointer-events-none absolute -bottom-2 -right-2 text-olive-900">
-								<svg class="h-5 w-5 fill-white stroke-olive-900 stroke-[1.5]" viewBox="0 0 24 24">
-									<path d="M18 11V6a2 2 0 00-4 0v5M14 10V4a2 2 0 00-4 0v6M10 10.5V2a2 2 0 00-4 0v9M6 13V9a2 2 0 00-4 0v8a7 7 0 0014 0v-4a2 2 0 00-4 0" />
-								</svg>
-							</div>
-						</div>
+						<a
+							:href="waLink"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="flex w-full items-center justify-center gap-2 rounded-md bg-olive-800 px-3 py-2.5 text-xs font-semibold tracking-[0.25em] uppercase text-beige-50 shadow-sm transition-all hover:bg-olive-900 cursor-pointer"
+						>
+							ENVIAR MENSAJE
+						</a>
 					</div>
 				</div>
 			</div>
