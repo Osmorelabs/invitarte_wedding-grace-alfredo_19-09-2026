@@ -78,7 +78,7 @@ withDefaults(
 							PADRES DE LA NOVIA
 						</p>
 						<p class="mt-1.5 font-serif text-base text-olive-800 font-medium">
-							Sr. Víctor Méndez Chávez ✝
+							Sr. Victor Mendez Chavez ✝
 						</p>
 						<p class="font-serif text-sm text-olive-700">
 							&amp; Sra. Lucrecia Turpo Arapa
@@ -105,7 +105,7 @@ withDefaults(
 						Sr. Plinio Juan Paredes Maydana
 					</p>
 					<p class="font-serif text-sm text-olive-700">
-						&amp; Sra. Lus Rodriguez del Carpio
+						&amp; Sra. Luz Rodriguez de Paredes
 					</p>
 				</div>
 			</div>
