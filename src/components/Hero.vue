@@ -121,7 +121,7 @@ withDefaults(
 				</h1>
 			</div>
 
-			<p class="mt-6 font-serif text-sm tracking-[0.25em] uppercase text-olive-600 font-medium">
+			<p class="mt-5 font-serif text-xs tracking-[0.20em] uppercase text-olive-600 font-medium">
 				TENEMOS EL HONOR DE INVITARLOS A NUESTRA BODA
 			</p>
 
