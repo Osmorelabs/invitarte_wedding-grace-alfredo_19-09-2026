@@ -112,11 +112,11 @@ withDefaults(
 
 			<!-- Calligraphy Names -->
 			<div class="mt-10 flex flex-col items-center justify-center">
-				<h1 class="font-script text-8xl sm:text-8xl text-olive-800 leading-none drop-shadow-sm">
+				<h1 class="font-script text-8xl sm:text-7xl text-olive-800 leading-none drop-shadow-sm">
 					{{ bride }}
 				</h1>
 				<span class="font-script text-5xl text-olive-600 my-1">&amp;</span>
-				<h1 class="font-script text-8xl sm:text-8xl text-olive-800 leading-none drop-shadow-sm">
+				<h1 class="font-script text-8xl sm:text-7xl text-olive-800 leading-none drop-shadow-sm">
 					{{ groom }}
 				</h1>
 			</div>
